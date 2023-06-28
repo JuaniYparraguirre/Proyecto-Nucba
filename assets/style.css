@@ -143,7 +143,6 @@ main {
   gap: 10px;
 }
 .hero-card-top {
-  background: green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,6 +164,32 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.hero-card-creator {
+  display: flex;
+}
+.creator-info {
+  margin: 5px;
+  padding: 2px 0;
+  line-height: 150%;
+  width: 100%;
+}
+.creator-info span {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+.hero-card-price {
+  margin: 5px;
+  padding: 5px 0;
+}
+.hero-card-price p {
+  font-size: 14px;
+  font-weight: 100px;
+  color: var(--text-gray);
+  line-height: 150%;
+}
+.hero-card-price span {
+  font-weight: 800;
+}
 #info {
   padding: 70px 0;
   max-width: 1200px;
@@ -180,11 +205,11 @@ main {
   font-weight: 800;
 }
 .info-cards-containers {
-  background: red;
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
+
 .info-cards {
   background: var(--secondary);
   width: 300px;
@@ -193,7 +218,8 @@ main {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -204,6 +230,7 @@ main {
 .info-cards p {
   text-align: center;
   font-size: 14px;
+  color: var(--text-gray);
 }
 /* Descubre S */
 #discover {
@@ -217,7 +244,6 @@ main {
 }
 
 .discover-info {
-  background: green;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -228,7 +254,6 @@ main {
   width: 45%;
 }
 .discover-text {
-  background: gray;
   width: 45%;
   display: flex;
   flex-direction: column;
