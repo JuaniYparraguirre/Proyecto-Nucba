@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Poppins:ital,wght@0,500;0,700;1,400;1,600&display=swap");
+:root {
+  /* bg colors */
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-lg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* Text colors */
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  /* Decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+.logo {
+  padding: 1%;
+  width: 150px;
+  height: 70px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins";
+  border-color: red;
+  gap: 1px;
+}
+body {
+  background: var(--background);
+}
+header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+}
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  gap: 2rem;
+}
+.navbar-list {
+  gap: 1rem;
+}
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+.navbar-list .active {
+  font-weight: 600;
+  color: var(--text-white);
+}
+.cart-icon {
+  padding: 5px 10px;
+  height: 30px;
+  cursor: pointer;
+}
+/* ========hero section======*/
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+#hero {
+  max-width: 1200px;
+  margin-top: 65px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  font-weight: 800;
+  min-width: 500px;
+  width: 80%;
+}
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--text--gray);
+}
+.hero-info span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-info a {
+  color: var(--text-white);
+  background: var(--primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.hero-card {
+  background-color: var(--secondary);
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-card img {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+}
+.hero-card-info {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-card-top {
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.hero-card-top h3 {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-card-top span {
+  background: var(--primary);
+  border-radius: 10px;
+  padding: 3px 15px;
+  font-size: 14px;
+}
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#info {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+#info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.info-cards-containers {
+  background: red;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.info-cards {
+  background: var(--secondary);
+  width: 300px;
+  height: 290px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 20px;
+}
+
+.info-cards img {
+  width: 50px;
+}
+
+.info-cards p {
+  text-align: center;
+  font-size: 14px;
+}
+/* Descubre S */
+#discover {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.discover-info {
+  background: green;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.discover-info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  width: 45%;
+}
+.discover-text {
+  background: gray;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.discover-text p {
+  color: var(--text-gray);
+}
+.discover-text a {
+  color: var(--text-white);
+}
+.discover-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.discover-cards img {
+  width: 30%;
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+#products h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+  background: var(--btn-lg);
+}
+.active {
+  background: var(--primary);
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product {
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 25px;
+  gap: 20px;
+}
+.product-info {
+  /* background-color: #ff6d00; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 220px;
+}
+
+.product-top,
+.product-mid,
+.product-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-top h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-top p,
+.product-user p {
+  color: var(--text-gray);
+}
+
+.product-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-mid span {
+  font-weight: 800;
+}
+.offer-time {
+  font-weight: 600;
+}
+.offer-time img {
+  width: 20px;
+}
+.btn-add {
+  background: var(--primary);
+  border: none;
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: var(--text-white);
+  cursor: pointer;
+}
+.btn-load {
+  color: #1e50ff;
+}
+
+footer {
+  background: var(--background);
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+footer a,
+footer p {
+  color: var(--text-gray);
+  gap: 20px;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+footer sapan {
+  font-weight: 800;
+}
