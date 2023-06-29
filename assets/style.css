@@ -32,6 +32,7 @@
   font-family: "Poppins";
   border-color: red;
   gap: 1px;
+  border: 1px solid red;
 }
 body {
   background: var(--background);
@@ -46,6 +47,7 @@ header {
   position: fixed;
   width: 100%;
 }
+
 .navbar,
 .navbar-list {
   display: flex;
@@ -192,7 +194,7 @@ main {
 }
 #info {
   padding: 70px 0;
-  max-width: 1200px;
+  max-width: 120;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,7 +242,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  gap: 80px;
 }
 
 .discover-info {
@@ -264,6 +266,8 @@ main {
 }
 .discover-text a {
   color: var(--text-white);
+  font-weight: 600;
+  text-decoration: underline;
 }
 .discover-cards {
   display: flex;
@@ -276,6 +280,7 @@ main {
 }
 
 #products {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,6 +303,11 @@ main {
 
 .category {
   background: var(--btn-lg);
+  border: none;
+  padding: 10px 15px;
+  color: var(--text-white);
+  border-radius: 10px;
+  cursor: pointer;
 }
 .active {
   background: var(--primary);
